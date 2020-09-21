@@ -6,7 +6,7 @@
  
  Description: Displays Menu w/ items
               Lets user select items until exit command issued
-			  Handles input mismatch exception
+	      Handles input mismatch exception
 
 Author/Date: Brett Wilson 9/22/2020
 ********************************************************************/
@@ -33,12 +33,12 @@ public class Menu
             }
             catch(InputMismatchException e)
             {
-                System.out.println("Invalid input type.");
-				//input.next() is needed because of an API issue. 
-				//If this line is not included the code will infinite loop
-				//because the scanner does not discard the token and keeps testing over and over.
-				//The scanner needs to be explicitly told to discard and move on.
-                input.next();  
+                System.out.println("Invalid input type.");		
+                input.next();
+		//input.next() is needed because of an API issue. 
+		//If this line is not included the code will infinite loop
+		//because the scanner does not discard the token and keeps testing over and over.
+		//The scanner needs to be explicitly told to discard and move on.
                 continue;
             }
             
