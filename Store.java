@@ -1,12 +1,15 @@
 /********************************************************************
- File Name: Menu.java
+ File Name: Store.java
  
- Input Variables: choice
- Output Variables: none
+ Input Variables: choice, pause
+ Output Variables: subTotal, Total
  
  Description: Displays Menu w/ items
               Lets user select items until exit command issued
 	      Handles input mismatch exception
+	      Keeps running subtotal of items chosen
+	      Exits with total including sales tax
+	      
 Author/Date: Brett Wilson 9/22/2020
 ********************************************************************/
 package com.mycompany.sneakerstore;
